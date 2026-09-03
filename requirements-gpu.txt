@@ -1,0 +1,13 @@
+# GPU (NVIDIA / CUDA 12) runtime libraries for faster-whisper + CTranslate2.
+#
+# CTranslate2 wheels are built against CUDA 12 + cuDNN 9 but bundle neither on
+# Windows. Without these you'll get:
+#   RuntimeError: Library cublas64_12.dll is not found or cannot be loaded
+#
+# Install after requirements.txt:
+#   pip install -r requirements-gpu.txt
+#
+# Skip this file entirely to run Whisper on CPU (set whisper_device="cpu").
+
+nvidia-cublas-cu12
+nvidia-cudnn-cu12>=9.0

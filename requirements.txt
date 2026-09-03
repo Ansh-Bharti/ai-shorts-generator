@@ -1,6 +1,6 @@
 faster-whisper>=1.0.3
 ctranslate2>=4.4.0
-opencv-python>=4.9.0
+opencv-python>=4.9.0,<5        # OpenCV 5 removed cv2.CascadeClassifier (used by the reframer)
 requests>=2.31.0
 json-repair>=0.29.0
 numpy>=1.26.0
