@@ -1,0 +1,32 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# --- Local config / secrets ---
+config.json
+.env
+.env.*
+
+# --- Bundled binaries (too large for git; code falls back to ffmpeg on PATH) ---
+tools/ffmpeg/
+
+# --- Models & caches (regenerated locally) ---
+models/
+cache/
+transcripts/
+captions/
+.cache/
+
+# --- Runtime I/O ---
+input/
+output/
+temp/
+logs/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
